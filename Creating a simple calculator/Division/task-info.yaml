@@ -1,0 +1,69 @@
+type: edu
+files:
+- name: src/Calculator.java
+  visible: true
+  placeholders:
+  - offset: 74
+    length: 1
+    placeholder_text: 0
+    dependency:
+      lesson: Creating a simple calculator
+      task: Multplication
+      file: src/Calculator.java
+      placeholder: 1
+      is_visible: false
+    initial_state:
+      length: 1
+      offset: 74
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: a + b
+  - offset: 135
+    length: 1
+    placeholder_text: 0
+    dependency:
+      lesson: Creating a simple calculator
+      task: Multplication
+      file: src/Calculator.java
+      placeholder: 2
+      is_visible: false
+    initial_state:
+      length: 1
+      offset: 135
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: a * b
+  - offset: 193
+    length: 1
+    placeholder_text: 0
+    initial_state:
+      length: 1
+      offset: 193
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: (double) a / b
+  text: "public class Calculator {\n  public int addition(int a, int b) {\n  \treturn\
+    \ 0;\n  }\n  public int multiplication(int a, int b) {\n\t  return 0;\n  }\n \
+    \ public double division(int a, int b) {\n\t  return 0;\n  }\n}"
+  learner_created: false
+- name: test/Tests.java
+  visible: false
+  text: |-
+    import org.junit.Assert;
+    import org.junit.Test;
+
+    public class Tests {
+      @Test
+      public void testSolution() {
+        Calculator calculator = new Calculator();
+        double expected = 5;
+        double actual = calculator.division(15, 3);
+        Assert.assertEquals(expected, actual, 0.1);
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
